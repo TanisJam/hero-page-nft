@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./card.module.scss";
 
-const card = () => {
+const card = ({image}) => {
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
         <Image
-          src="/images/rocket.png"
+          src={`/images/${image}.png`}
           alt="balloon"
           width={400}
           height={500}
