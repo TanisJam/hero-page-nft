@@ -20,6 +20,14 @@
     background-color: rgba(102, 183, 213, 0.2);
     border-radius: 5rem;
     margin-right: 0.5rem;
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    &:hover {
+      animation: rotate 1s ease-in-out;
+    }
   }
 
   .data {

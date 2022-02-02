@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./card.module.scss";
 
-const card = ({image}) => {
+const card = ({image, title, description}) => {
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
@@ -12,8 +12,8 @@ const card = ({image}) => {
           height={500}
         />
         <div className={styles.cardBody}>
-          <h3>Success#0831</h3>
-          <p> Everyday Pbject Collection </p>
+          <h3>{title}</h3>
+          <p>{description}</p>
         </div>
       </div>
     </div>

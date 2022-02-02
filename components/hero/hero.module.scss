@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;  
+  grid-gap: 1rem;
   margin: auto;
   margin-top: 2rem;
   padding-top: 2rem;
@@ -18,6 +18,7 @@
   button {
     width: 8rem;
     margin-right: 1rem;
+    margin-top: 1.5rem;
   }
   @media (max-width: 784px) {
     justify-content: center;
@@ -40,5 +41,10 @@
       margin-block: 0;
       margin-bottom: -1.4rem;
     }
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 0.5;
+    font-weight: 500;
   }
 }
