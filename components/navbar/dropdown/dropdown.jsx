@@ -14,7 +14,7 @@ const Dropdown = () => {
     <div className={styles.dropdown}>
       <span className={styles.btnMenu} onClick={toggleMenu}>
         More
-        <AiFillCaretDown />
+        {hideMenu ? <AiFillCaretDown /> : <AiFillCaretUp />}
       </span>
       <ul className={styles.navLinks}>
         <li>

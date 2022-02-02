@@ -1,10 +1,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  
+  grid-gap: 1rem;  
   margin: auto;
   margin-top: 2rem;
+  padding-top: 2rem;
   @media (max-width: 734px) {
     grid-template-columns: 1fr;
     justify-items: center;

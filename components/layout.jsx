@@ -1,4 +1,5 @@
 import Navbar from "./navbar/navbar";
+import Footer from "./footer";
 import styles from "./layout.module.scss";
 
 const layout = ({ children }) => {
@@ -6,6 +7,7 @@ const layout = ({ children }) => {
     <>
       <Navbar />
       <main className={styles.container}>{children}</main>
+      <Footer />
     </>
   );
 };

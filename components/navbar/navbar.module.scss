@@ -4,10 +4,10 @@
   align-items: center;
   gap: 1rem;
   padding: 0.5rem 1rem;
-
   @media screen and (min-width: 45rem) {
-    margin: auto auto;
+    margin: auto;
     max-width: 60rem;
+    padding-top: 2rem;
   }
   @media screen and (max-width: 40rem) {
     flex-direction: column;
