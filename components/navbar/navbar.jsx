@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { DiYii } from "react-icons/di";
+import {FiSearch} from "react-icons/fi";
+import Button from "../button";
 import styles from "./navbar.module.scss";
 
 const navbar = () => {
@@ -13,9 +15,10 @@ const navbar = () => {
         </a>
       </Link>
 
-      <div className="search">
+      <form className={styles.searchContainer}>
+        <button><FiSearch/></button>
         <input type="text" placeholder="Search" />
-      </div>
+      </form>
 
       <ul className={styles.navLinks}>
         <li>
@@ -34,7 +37,7 @@ const navbar = () => {
           </Link>
         </li>
         <li>
-          <button>Connect Wallet</button>
+          <Button>Connect Wallet</Button>
         </li>
       </ul>
     </nav>

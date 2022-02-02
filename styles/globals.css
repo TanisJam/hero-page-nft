@@ -19,6 +19,8 @@ body {
   background-size: 200% 200%;
   background-position: 85% 60%;
   color: #fff;
+
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 
 a {

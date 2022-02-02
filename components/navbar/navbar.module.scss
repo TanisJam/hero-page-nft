@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 
   @media screen and (min-width: 45rem) {
     margin: auto auto;
@@ -14,10 +14,11 @@
   }
 }
 
-.brand{
+.brand {
   display: flex;
   flex-direction: row;
   text-align: center;
+  font-weight: 700;
   &:hover {
     color: #fff;
   }
@@ -25,20 +26,68 @@
 .logo {
   height: 1.4rem;
   width: 1.4rem;
-  margin: auto .4rem;  
+  margin: auto 0.4rem;
+}
+
+.searchContainer {
+  height: 2.2rem;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: solid 2px hsla(0, 0%, 100%, 0.3);
+  display: flex;
+  transition: box-shadow 0.2s ease-out;
+  &:hover {
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.2) inset;
+  }
+  button {
+    color: hsla(0, 0%, 100%, 0.5);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  input {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 .navLinks {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   list-style-type: none;
   padding: 0;
   text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsla(0, 0%, 100%, 0.8);
   @media screen and (max-width: 40rem) {
     margin: 0;
     flex-direction: column;
   }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    transition: all 0.2s ease-out;
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+    }
+  }
 }
-
-

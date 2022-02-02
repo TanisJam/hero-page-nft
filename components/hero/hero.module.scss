@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 0 4rem;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 60rem;
+  @media (max-width: 734px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: initial;
+  button {
+    width: 8rem;
+    margin-right: 1rem;
+  }
+}
+
+.left {
+  text-align: left;
+  max-width: 20rem;
+  @media (max-width: 734px) {
+    text-align: center;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding-block: 0;
+      margin-block: 0;
+      margin-bottom: -1.4rem;
+    }
+  }
+}
