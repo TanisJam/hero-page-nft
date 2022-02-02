@@ -2,10 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  padding: 0 4rem;
+  
   margin: auto;
   margin-top: 2rem;
-  max-width: 60rem;
   @media (max-width: 734px) {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -19,6 +18,9 @@
   button {
     width: 8rem;
     margin-right: 1rem;
+  }
+  @media (max-width: 734px) {
+    justify-content: center;
   }
 }
 

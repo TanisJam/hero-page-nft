@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { DiYii } from "react-icons/di";
-import {FiSearch} from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 import Button from "../button";
+import Dropdown from "./dropdown/dropdown";
 import styles from "./navbar.module.scss";
 
 const navbar = () => {
@@ -16,30 +17,15 @@ const navbar = () => {
       </Link>
 
       <form className={styles.searchContainer}>
-        <button><FiSearch/></button>
+        <button>
+          <FiSearch />
+        </button>
         <input type="text" placeholder="Search" />
       </form>
 
-      <ul className={styles.navLinks}>
-        <li>
-          <Link href="/">
-            <a>Explore NFT</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Artist</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Community</a>
-          </Link>
-        </li>
-        <li>
-          <Button>Connect Wallet</Button>
-        </li>
-      </ul>
+      <Dropdown />
+
+      <Button>Connect Wallet</Button>
     </nav>
   );
 };

@@ -1,14 +1,13 @@
-import Navbar from './navbar/navbar'
+import Navbar from "./navbar/navbar";
+import styles from "./layout.module.scss";
 
-const layout = ({children}) => {
+const layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>
-        {children}
-      </main>
+      <main className={styles.container}>{children}</main>
     </>
   );
-}
+};
 
 export default layout;

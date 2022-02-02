@@ -19,8 +19,10 @@
   flex-direction: row;
   text-align: center;
   font-weight: 700;
+  transition: text-shadow 0.2s ease-in;
   &:hover {
     color: #fff;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
   }
 }
 .logo {
@@ -35,9 +37,9 @@
   background-color: transparent;
   border: solid 2px hsla(0, 0%, 100%, 0.3);
   display: flex;
-  transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.3s ease-in;
   &:hover {
-    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.4) inset;
   }
   button {
     color: hsla(0, 0%, 100%, 0.5);
@@ -63,31 +65,4 @@
   }
 }
 
-.navLinks {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: hsla(0, 0%, 100%, 0.8);
-  @media screen and (max-width: 40rem) {
-    margin: 0;
-    flex-direction: column;
-  }
-  li {
-    display: flex;
-    align-items: center;
-  }
-  a {
-    transition: all 0.2s ease-out;
-    &:hover {
-      color: #fff;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 2px;
-    }
-  }
-}
+

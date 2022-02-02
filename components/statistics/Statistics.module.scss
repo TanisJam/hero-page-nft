@@ -1,0 +1,7 @@
+.container {
+  display: flex; 
+  margin-block: 2rem; 
+  @media (max-width: 734px) {
+    justify-content: space-around;
+  }
+}
