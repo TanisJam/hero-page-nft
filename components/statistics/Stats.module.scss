@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 734px) {
+  @media (max-width: 784px) {
     margin: auto;
   }
 }
@@ -40,7 +40,7 @@
     margin-top: -0.3rem;
     color: rgba(255, 255, 255, 0.7);
   }
-  @media (max-width: 734px) {
+  @media (max-width: 784px) {
     width: 8rem;
   }
 }

@@ -5,7 +5,7 @@
   margin: auto;
   margin-top: 2rem;
   padding-top: 2rem;
-  @media (max-width: 734px) {
+  @media (max-width: 784px) {
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 0 1rem;
@@ -19,7 +19,7 @@
     width: 8rem;
     margin-right: 1rem;
   }
-  @media (max-width: 734px) {
+  @media (max-width: 784px) {
     justify-content: center;
   }
 }
@@ -27,7 +27,7 @@
 .left {
   text-align: left;
   max-width: 20rem;
-  @media (max-width: 734px) {
+  @media (max-width: 784px) {
     text-align: center;
   }
   h1 {
