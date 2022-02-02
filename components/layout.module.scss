@@ -10,3 +10,40 @@
     padding: 0;
   }
 }
+
+.star {
+  --size: 1vw;
+  --deg: 90deg;
+  width: var(--size);
+  height: var(--size);
+  background: rgba(116, 73, 151, 0.2);
+  // border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes starfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0) rotateZ(var(--deg));
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0) rotateZ(var(--deg));
+  }
+}
+
+@for $i from 1 through 50 {
+  .star:nth-child(#{$i}) {
+    --size: #{random(4) * 0.2}vw;
+    --left-ini: #{random(20) - 10}vw;
+    --left-end: #{random(20) - 10}vw;
+    --deg: #{random(45)}deg;
+    left: #{random(100)}vw;
+    animation: starfall #{50 + random(10)}s linear infinite;
+    animation-delay: -#{random(100)}s;
+  }
+}
+
+.star:nth-child(6n) {
+  filter: blur(1px);
+}

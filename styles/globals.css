@@ -11,6 +11,8 @@ body {
   font-family: "IBM Plex Sans Thai Looped", sans-serif;
 }
 #__next {
+  position: relative;
+  overflow: hidden;
   min-height: 100vh;
   background: rgb(62, 42, 105);
   background: radial-gradient(
