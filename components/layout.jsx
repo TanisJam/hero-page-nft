@@ -10,9 +10,7 @@ const layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div className={styles.starsContainer}>
-        { stars }
-      </div>
+      <div className={styles.starsContainer}>{stars}</div>
       <main className={styles.container}>{children}</main>
       <Footer />
     </>

@@ -66,6 +66,10 @@
         width: 19rem;
         height: 4rem;
       }
+      @media screen and (min-width: 1300px) {
+        top: 20.8rem;
+        left: -1.5rem;
+      }
     }
   }
   @media (max-width: 784px) {

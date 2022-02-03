@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=2"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link

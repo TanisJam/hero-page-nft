@@ -28,6 +28,12 @@ body {
   color: #fff;
 }
 
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 22px;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
